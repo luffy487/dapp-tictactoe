@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Crypto Tic Tac Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Crypto Tic Tac Toe is a decentralized Tic Tac Toe game built on the Ethereum blockchain. Players can create games, join games, and place bets using ERC20 tokens. This project combines blockchain technology with a classic game, offering a unique gaming experience.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Blockchain Integration**: Utilize Ethereum smart contracts to manage game logic and player interactions.
+- **Token Betting**: Players can bet ERC20 tokens on the outcome of the game.
+- **Multi-Signature Wallet**: Enhanced security with multi-signature transactions.
+- **User Interface**: Modern and responsive UI with a consistent design using Tailwind CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: For building the user interface.
+- **Tailwind CSS**: For styling the application.
+- **Solidity**: For writing Ethereum smart contracts.
+- **Web3.js**: For interacting with the Ethereum blockchain.
+- **Ethereum**: For deploying and interacting with smart contracts.
+- **Foundry**: For smart contract development and testing.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+1. **Node.js**: Ensure you have Node.js installed. Download it from [nodejs.org](https://nodejs.org/).
+2. **Ethereum Wallet**: MetaMask or another Ethereum wallet for interacting with the blockchain.
+3. **ERC20 Token**: A custom ERC20 token to use for betting.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/yourusername/crypto-tic-tac-toe.git
+    cd crypto-tic-tac-toe
+    ```
 
-### `npm run eject`
+2. **Install Dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Compile and Deploy Smart Contracts**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Ensure you have Foundry installed and configured. Compile and deploy the smart contracts using Foundry.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    forge build
+    forge deploy
+    ```
 
-## Learn More
+4. **Configure Environment Variables**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Create a `.env` file in the root directory and add the following:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```env
+    REACT_APP_CONTRACT_ADDRESS=your_contract_address
+    REACT_APP_TOKEN_ADDRESS=your_token_address
+    ```
 
-### Code Splitting
+5. **Run the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm start
+    ```
 
-### Analyzing the Bundle Size
+    Open your browser and navigate to `http://localhost:3000` to access the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+1. **Sign Up**: Click the "Sign Up" button to register as a user.
+2. **Create Game**: Click the "Create Game" button to start a new game with a specified bet amount.
+3. **Join Game**: Browse available games and join one to participate.
+4. **Play Game**: Once in a game, make your moves on the board and interact with other players.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+- `src/`: Contains all the React components and application logic.
+- `contracts/`: Contains Solidity smart contracts for the game and token.
+- `public/`: Contains public assets and the HTML template.
+- `tailwind.config.js`: Tailwind CSS configuration file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+1. **Fork the Repository**: Create your own fork of the repository.
+2. **Create a Branch**: Create a feature branch for your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```bash
+    git checkout -b feature/your-feature
+    ```
 
-### `npm run build` fails to minify
+3. **Make Changes**: Implement your changes or new features.
+4. **Commit Changes**: Commit your changes with a descriptive message.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    git commit -am 'Add some feature'
+    ```
+
+5. **Push Changes**: Push your changes to your forked repository.
+
+    ```bash
+    git push origin feature/your-feature
+    ```
+
+6. **Create a Pull Request**: Open a pull request to merge your changes into the main repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [React](https://reactjs.org/) - For building the user interface.
+- [Tailwind CSS](https://tailwindcss.com/) - For styling the application.
+- [Foundry](https://book.getfoundry.sh/) - For smart contract development and testing.
