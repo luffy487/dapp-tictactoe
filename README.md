@@ -24,9 +24,7 @@ Crypto Tic Tac Toe is a decentralized Tic Tac Toe game built on the Ethereum blo
 
 ### Prerequisites
 
-1. **Node.js**: Ensure you have Node.js installed. Download it from [nodejs.org](https://nodejs.org/).
-2. **Ethereum Wallet**: MetaMask or another Ethereum wallet for interacting with the blockchain.
-3. **ERC20 Token**: A custom ERC20 token to use for betting.
+1. **Ethereum Wallet**: MetaMask or another Ethereum wallet for interacting with the blockchain.
 
 ### Installation
 

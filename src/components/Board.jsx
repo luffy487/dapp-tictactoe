@@ -129,7 +129,7 @@ const Board = ({ gameId, game, account, player1, player2 }) => {
                 </div>
                 <div>
                   {"Opponent: " +
-                    (account.toString().toLowerCase() ==
+                    (account.toString().toLowerCase() ===
                     player1.toString().toLowerCase()
                       ? player2.slice(0, 6) + "..." + player2.slice(-4)
                       : player1.slice(0, 6) + "..." + player1.slice(-4))}

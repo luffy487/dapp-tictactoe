@@ -20,7 +20,7 @@ const Games = ({ account, game, token }) => {
       }
     };
     init();
-  }, [game, account]);
+  }, []);
 
   const setUserStatus = async () => {
     const isUser = await game.methods.isUser(account).call();
