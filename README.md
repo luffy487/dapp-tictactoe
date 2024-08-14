@@ -1,116 +1,29 @@
-# Crypto Tic Tac Toe
+# Ethereum Smart Contract Game with Solidity, Foundry, and React.js
 
 ## Overview
 
-Crypto Tic Tac Toe is a decentralized Tic Tac Toe game built on the Ethereum blockchain. Players can create games, join games, and place bets using ERC20 tokens. This project combines blockchain technology with a classic game, offering a unique gaming experience.
+This project implements a simple game on the Ethereum blockchain using Solidity for the smart contract, Foundry for development, and React.js for the user interface (UI). The game allows users to connect their wallets via Metamask, create or join a game, and bet ERC-20 tokens. The game is designed for two players, and the winner takes the total bet amount. If the game ends in a draw, the bet amount is returned to each player.
+
+## Flow
+
+![alt text](/public/flow.png)
 
 ## Features
 
-- **Blockchain Integration**: Utilize Ethereum smart contracts to manage game logic and player interactions.
-- **Token Betting**: Players can bet ERC20 tokens on the outcome of the game.
-- **Multi-Signature Wallet**: Enhanced security with multi-signature transactions.
-- **User Interface**: Modern and responsive UI with a consistent design using Tailwind CSS.
-
-## Technologies Used
-
-- **React**: For building the user interface.
-- **Tailwind CSS**: For styling the application.
-- **Solidity**: For writing Ethereum smart contracts.
-- **Web3.js**: For interacting with the Ethereum blockchain.
-- **Ethereum**: For deploying and interacting with smart contracts.
-- **Foundry**: For smart contract development and testing.
-
-## Getting Started
-
-### Prerequisites
-
-1. **Ethereum Wallet**: MetaMask or another Ethereum wallet for interacting with the blockchain.
-
-### Installation
-
-1. **Clone the Repository**
-
-    ```bash
-    git clone https://github.com/yourusername/crypto-tic-tac-toe.git
-    cd crypto-tic-tac-toe
-    ```
-
-2. **Install Dependencies**
-
-    ```bash
-    npm install
-    ```
-
-3. **Compile and Deploy Smart Contracts**
-
-    Ensure you have Foundry installed and configured. Compile and deploy the smart contracts using Foundry.
-
-    ```bash
-    forge build
-    forge deploy
-    ```
-
-4. **Configure Environment Variables**
-
-    Create a `.env` file in the root directory and add the following:
-
-    ```env
-    REACT_APP_CONTRACT_ADDRESS=your_contract_address
-    REACT_APP_TOKEN_ADDRESS=your_token_address
-    ```
-
-5. **Run the Application**
-
-    ```bash
-    npm start
-    ```
-
-    Open your browser and navigate to `http://localhost:3000` to access the application.
-
-## Usage
-
-1. **Sign Up**: Click the "Sign Up" button to register as a user.
-2. **Create Game**: Click the "Create Game" button to start a new game with a specified bet amount.
-3. **Join Game**: Browse available games and join one to participate.
-4. **Play Game**: Once in a game, make your moves on the board and interact with other players.
+- **Wallet Integration**: Users can connect their Ethereum wallets directly through the UI using Metamask.
+- **Game Creation**: Users can create a new game by specifying the ERC-20 token contract address and the bet amount.
+- **Join Game**: Other users can join an existing game by choosing the bet amount and the same ERC-20 tokens.
+- **Gameplay**: The game requires two players. The winner takes the total bet amount, or if it's a draw, the bet amount is returned to each player.
+- **Token Transfer**: The smart contract manages the transfer of ERC-20 tokens securely.
 
 ## Project Structure
 
-- `src/`: Contains all the React components and application logic.
-- `contracts/`: Contains Solidity smart contracts for the game and token.
-- `public/`: Contains public assets and the HTML template.
-- `tailwind.config.js`: Tailwind CSS configuration file.
+- **Smart Contract**: Built using [Solidity](https://soliditylang.org/) with [Foundry](https://book.getfoundry.sh/) for developing, testing, and deploying the game logic and token handling.
+- **Frontend**: Developed with [React.js](https://reactjs.org/) for creating the UI.
 
-## Contributing
+## Prerequisites
 
-1. **Fork the Repository**: Create your own fork of the repository.
-2. **Create a Branch**: Create a feature branch for your changes.
-
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-
-3. **Make Changes**: Implement your changes or new features.
-4. **Commit Changes**: Commit your changes with a descriptive message.
-
-    ```bash
-    git commit -am 'Add some feature'
-    ```
-
-5. **Push Changes**: Push your changes to your forked repository.
-
-    ```bash
-    git push origin feature/your-feature
-    ```
-
-6. **Create a Pull Request**: Open a pull request to merge your changes into the main repository.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [React](https://reactjs.org/) - For building the user interface.
-- [Tailwind CSS](https://tailwindcss.com/) - For styling the application.
-- [Foundry](https://book.getfoundry.sh/) - For smart contract development and testing.
+- [Node.js](https://nodejs.org/en/)
+- [Foundry](https://book.getfoundry.sh/getting-started/installation) (for smart contract development and testing)
+- [React.js](https://reactjs.org/docs/getting-started.html) (for frontend)
+- [Metamask](https://metamask.io/) or other Ethereum-compatible wallets.
