@@ -25,7 +25,7 @@ This project implements a simple game on the Ethereum blockchain using Solidity 
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/)
+- [Solidity](https://soliditylang.org/)
 - [Foundry](https://book.getfoundry.sh/getting-started/installation) (for smart contract development and testing)
 - [React.js](https://reactjs.org/docs/getting-started.html) (for frontend)
 - [Metamask](https://metamask.io/) or other Ethereum-compatible wallets.
