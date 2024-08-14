@@ -6,7 +6,7 @@ This project implements a simple game on the Ethereum blockchain using Solidity 
 
 ## Flow
 
-![alt text](/public/flow.png)
+![Game Flow](/public/flow.png)
 
 ## Features
 
@@ -18,7 +18,9 @@ This project implements a simple game on the Ethereum blockchain using Solidity 
 
 ## Project Structure
 
-- **Smart Contract**: Built using [Solidity](https://soliditylang.org/) with [Foundry](https://book.getfoundry.sh/) for developing, testing, and deploying the game logic and token handling.
+- **Smart Contract**: Built using [Solidity](https://soliditylang.org/) with [Foundry](https://book.getfoundry.sh/) for developing, testing, and deploying the game logic and token handling.  
+  You can view the smart contract code [in this repository](https://github.com/luffy487/tic-tac-toe).
+
 - **Frontend**: Developed with [React.js](https://reactjs.org/) for creating the UI.
 
 ## Prerequisites
